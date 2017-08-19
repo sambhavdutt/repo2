@@ -1,0 +1,8 @@
+---
+- hosts: 127.0.0.1
+  user: test
+  connection: ssh
+  gather_facts: no
+  tasks:
+    - name: Package
+      action: yum name=httpd status=latest
